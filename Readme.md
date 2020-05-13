@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Ольга Чиркова](https://up.htmlacademy.ru/htmlcss/28/user/457415).
-* Наставник: `Никита Рогатнев`.
+* Наставник: [Никита Рогатнев](https://htmlacademy.ru/profile/nikita_rogatnev).
 
 ---
 
