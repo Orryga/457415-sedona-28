@@ -8,102 +8,109 @@
     <header>
       <nav>
         <a>
-          <img src="" alt="Логотип «City of Sedona»">
+          <img src="#" alt="Логотип «City of Sedona»">
         </a>
         <ul>
-          <li><a href="">Информация</a></li>
-          <li><a href="">Фото и видео</a></li>
-          <li><a href="">Карта штата</a></li>
+          <li><a href="#">Информация</a></li>
+          <li><a href="#">Фото и видео</a></li>
+          <li><a href="#">Карта штата</a></li>
           <li><a href="hotels.html">Гостиницы</a></li>
         </ul>
       </nav>
     </header>
     <main>
-      <section>
+      <section class="welcome Sedona">
         <h1>Добро пожаловать в Седону</h1>
-        <!--Есть сомнения относительно заголовков -->
-        <a>
-          <img src="https://via.placeholder.com/456.65x350.88" alt="Логотип «Седона» ">
-        </a>
+        <img src="https://via.placeholder.com/456.65x350.88" alt="Логотип «Седона» ">
         <img src="https://via.placeholder.com/1200x509" alt="Добро пожаловать в Седону">
         <h2>Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
         <p>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
       </section>
-      <section>
+      <section class="reason">
         <ul>
           <li>
-            <h3>Настоящий<br> городок</h3>
-            <h4>— №1 —</h4>
-            <p>Седона - не аттракцион для туристов, там течёт своя жизнь</p>
-            <img src="https://via.placeholder.com/800x256" alt="Настоящий городок">
+            <div class="reason text">
+              <h3>Настоящий городок</h3>
+              <span>— №1 —</span>
+              <p>Седона - не аттракцион для туристов, там течёт своя жизнь</p>
+            </div>
+            <div class="reason img">
+              <img src="https://via.placeholder.com/800x256" alt="Настоящий городок">
+            </div>
             <ul>
               <li>
-                <img src="https://via.placeholder.com/75x72" alt="Жильё">
                 <h3>Жильё</h3>
                 <p>Жильё Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
               </li>
               <li>
-                <img src="https://via.placeholder.com/74x70" alt="Еда">
                 <h3>Еда</h3>
                 <p>Еда Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
               </li>
               <li>
-                <img src="https://via.placeholder.com/64x76" alt="Сувениры">
                 <h3>Сувениры</h3>
                 <p>Сувениры Не только китайского, но и местного производства!</p>
               </li>
             </ul>
           </li>
           <li>
-            <h3>Там есть<br> Мост дьявола</h3>
-            <h4>— №2 —</h4>
-            <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
-            <img src="https://via.placeholder.com/800x256" alt="Там есть мост дьявола">
+            <div class="reason text">
+              <h3>Там есть Мост дьявола</h3>
+              <span>— №2 —</span>
+              <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+            </div>
+            <div class="reason img">
+              <img src="https://via.placeholder.com/800x256" alt="Там есть мост дьявола">
+            </div>
           </li>
           <li>
-            <h3>Небольшая<br> площадь</h3>
-            <h4>— №3 —</h4>
+            <h3>Небольшая площадь</h3>
+            <span>— №3 —</span>
             <p>Все достопримечательности находятся очень близко</p>
           </li>
           <li>
-            <h3>Красивая<br> дорога</h3>
-            <h4>— №4 —</h4>
+            <h3>Красивая дорога</h3>
+            <span>— №4 —</span>
             <p>Ехать в седону из Лас-Вегаса совсем не скучно!</p>
           </li>
           <li>
-            <h3>Мало<br> туристов</h3>
-            <h4>— №5 —</h4>
+            <h3>Мало туристов</h3>
+            <span>— №5 —</span>
             <p>Большинство едет в Гранд Каньон и толпится там</p>
           </li>
         </ul>
       </section>
-      <section>
+      <section class="interest">
         <h2>Заинтересовались?</h2>
         <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
       </section>
-      <section>
+      <!-- разве не должна секция с попапом находиться вне мейна?-->
+      <section class="search">
         <p>Поиск гостиницы в Седоне</p>
-        <button type="button">Найти</button>
+        <a href="#">Найти</a>
         <!--Здесь будет форма -->
       </section>
-      <img src="https://via.placeholder.com/1200x594" alt="Карта">
+      <section class="map">
+        <img src="https://via.placeholder.com/1200x594" alt="Карта">
+      </section>
+      <!-- на счёт карты сомнения, мне кажется, что она может быть картинкой с сылкой и быть внутри мейн-->
     </main>
     <footer>
-      <section>
-        <p>#visitSEDONA<br> ТЕЛ: +7(495) 666-01-66</p>
+      <section class="communication">
+        <a href="#">#visitSEDONA</a>
+        <a href="tel:+74956660166">ТЕЛ: +7(495) 666-01-66</a>
       </section>
-      <section>
+      <section class="social">
         <ul>
-          <li>Твиттер</li>
-          <li>Фейсбук</li>
-          <li>Ютуб</li>
+          <li><a href="#">Твиттер</a></li>
+          <li><a href="#">Фейсбук</a></li>
+          <li><a href="#">Ютуб</a></li>
         </ul>
       </section>
-      <section>
-        <p>
+      <section class="logo html">
+        <span>
           Website by
-          <a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS, уровень 1</a>
-        </p>
+        </span>
+        <a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS, уровень 1</a>
       </section>
     </footer>
   </body>
