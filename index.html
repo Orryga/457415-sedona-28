@@ -20,7 +20,7 @@
     </header>
     <main class="main">
       <section class="welcome-sedona">
-        <h1>Добро пожаловать в Седону</h1>
+        <h1 class="visually-hidden">Добро пожаловать в Седону</h1>
         <img src="img/welcome.svg" width="459" height="353" alt="Логотип «Welcome»">
         <img src="img/background-photo.jpg" width="1200" height="800" alt="Добро пожаловать в Седону">
         <h2>Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
@@ -83,6 +83,29 @@
         <h2>Заинтересовались?</h2>
         <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
         <a>Поиск гостиницы в Седоне</a>
+        <form class="search" action="https://echo.htmlacademy.ru/courses" method="post">
+          <p>
+            <label for="arrival-date">Дата заезда</label>
+            <input id="arrival-date" type="date" name="arrival-date" value="24 апреля 2017">
+          </p>
+          <p>
+            <label for="date-of-departure">Дата выезда</label>
+            <input id="date-of-departure" type="date" name="date-of-departure" value="4 июля 2017">
+          </p>
+          <p>
+            <label for="number-a">Взрослые</label>
+            <button type="button" name="minus">-</button>
+            <input id="number-a" type="number" name="number-a" value="2">
+            <button type="button" name="plus">+</button>
+          </p>
+          <p>
+            <label for="number-c">Дети</label>
+            <button type="button" name="minus">-</button>
+            <input id="number-c" type="number" name="number-c" value="0">
+            <button type="button" name="plus">+</button>
+          </p>
+          <button type="submit">Найти</button>
+        </form>
       </section>
       <section class="map">
         <img src="img/map.jpg" width="1200" height="594" alt="Карта">
