@@ -3,6 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="header">
@@ -10,7 +13,7 @@
         <a>
           <img src="img/logo.svg" width="140" height="71"  alt="Логотип «City of Sedona»">
         </a>
-        <ul>
+        <ul class="navigation chang-color">
           <li><a href="#">Информация</a></li>
           <li><a href="#">Фото и видео</a></li>
           <li><a href="#">Карта штата</a></li>
@@ -82,8 +85,8 @@
       <section class="interest">
         <h2>Заинтересовались?</h2>
         <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-        <a>Поиск гостиницы в Седоне</a>
-        <form class="search" action="https://echo.htmlacademy.ru/courses" method="post">
+          <a class="brown">Поиск гостиницы в Седоне</a>
+          <form class="search" action="https://echo.htmlacademy.ru/courses" method="post">
           <p>
             <label for="arrival-date">Дата заезда</label>
             <input id="arrival-date" type="date" name="arrival-date" value="24 апреля 2017">
@@ -104,7 +107,7 @@
             <input id="number-c" type="number" name="number-c" value="0">
             <button type="button" name="plus">+</button>
           </p>
-          <button type="submit">Найти</button>
+          <button class="button blue" type="submit">Найти</button>
         </form>
       </section>
       <section class="map">
@@ -118,9 +121,9 @@
       </section>
       <section class="social">
         <ul>
-          <li><a href="#">Твиттер</a></li>
-          <li><a href="#">Фейсбук</a></li>
-          <li><a href="#">Ютуб</a></li>
+          <li><a class="blue" href="#">Твиттер</a></li>
+          <li><a class="blue" href="#">Фейсбук</a></li>
+          <li><a class="blue" href="#">Ютуб</a></li>
         </ul>
       </section>
       <section class="logo-html">
