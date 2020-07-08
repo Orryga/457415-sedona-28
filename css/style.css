@@ -21,11 +21,11 @@
 /*Глобальные*/
 
 body {
-  min-width: 1220;
+  min-width: 1200px;
   margin-left: 40px;
   margin-right: 40px;
   padding: 0;
-  font-family: 'PT Sans', sans-serif;
+  font-family: 'PT Sans', Arial, sans-serif;
   font-size: 14px;
   line-height: 21px;
   color: var(--black);
@@ -48,17 +48,74 @@ img {
   height: auto;
 }
 
+/* грид */
+
+.page {
+  height: 100%;  /* размер всей страницы */
+}
+
+.page-body {
+  min-width: 100%;
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+  align-content: start;
+}
+
 /*шапка*/
 
 .header {
+  width: 1200px;
+  margin: 0 auto;
   line-height: 26px;
   font-weight: bold;
   background-color: var(--white);
 }
+
+.main-navigation {
+  display: flex;
+  width: 100%;
+}
+
+.logo {
+  position: absolute;
+  width: 138px;
+  height: 70px;
+  left: 611px;
+  top: 0px;
+}
+
+.container {  /* для центрирования сайта */
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0;
+}
  
 .navigation {
+  width: 1200px;
+  min-height: 56;
+  margin: 0;
+  padding:15px 72px;
   list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  
+  outline: 5px solid rgba(0, 255, 255, 0.3);
+  outline-offset: -5px;
 }
+
+.navigation:nth-child(1) {
+  margin-right: 134px;
+}
+
+.navigation:nth-child(2) {
+  margin-right: 418px;
+}
+
+.navigation:nth-child(3) {
+  margin-right: 147px;
+}
+
 
 .navigation a:hover,
 .navigation a:focus {
@@ -75,6 +132,16 @@ img {
 }
 
 /*секция welcome sedona*/
+
+.welcome-sedona {
+  background-color: var(--basic-black);
+  background-image: url("../img/background.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 1200px;
+  height: 509px;
+  margin: 0 auto;
+}
 
 .visually-hidden {
   display: none;
@@ -100,6 +167,18 @@ img {
 /*секция reason*/
 
 /*секция interest*/
+
+.interest{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  background-color: var(--white);
+  width: 1200px;
+  min-height: 216px;
+  margin: 0 auto;
+}
+
 .interest h2 {
   font-weight: bold;
   font-size: 30px;
@@ -176,6 +255,8 @@ img {
   padding-left: 113px;
   padding-top: 390px;;
 }
+
+
 
 
 

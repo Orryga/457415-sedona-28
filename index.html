@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
@@ -7,27 +7,37 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
-  <body>
+  <body class="page-body">
+
+    
     <header class="header">
-      <nav>
-        <a>
-          <img src="img/logo.svg" width="140" height="71"  alt="Логотип «City of Sedona»">
-        </a>
-        <ul class="navigation chang-color">
-          <li><a href="#">Информация</a></li>
-          <li><a href="#">Фото и видео</a></li>
-          <li><a href="#">Карта штата</a></li>
-          <li><a href="hotels.html">Гостиницы</a></li>
-        </ul>
+      <nav class="main-navigation">
+        <div class="logo">
+          <a>
+            <img src="img/logo.svg" width="140" height="71"  alt="Логотип «City of Sedona»">
+          </a>
+        </div>
+        <div class="container">
+          <ul class="navigation">
+            <li><a href="#">Информация</a></li>
+            <li><a href="#">Фото и видео</a></li>
+            <li><a href="#">Карта штата</a></li>
+            <li><a href="hotels.html">Гостиницы</a></li>
+          </ul>
+        </div>
       </nav>
     </header>
-    <main class="main">
+
+
+    <main class="container">
       <section class="welcome-sedona">
         <h1 class="visually-hidden">Добро пожаловать в Седону</h1>
         <img src="img/welcome.svg" width="459" height="353" alt="Логотип «Welcome»">
         <img src="img/background-photo.jpg" width="1200" height="800" alt="Добро пожаловать в Седону">
-        <h2>Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
+        <div class="interest">
+          <h2>Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
         <p>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+        </div>
       </section>
       <section class="reason">
         <ul>
@@ -83,7 +93,7 @@
         </ul>
       </section>
       <section class="interest">
-        <h2>Заинтересовались?</h2>
+        <h2 class="interest-header">Заинтересовались?</h2>
         <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
           <a class="brown">Поиск гостиницы в Седоне</a>
           <form class="search" action="https://echo.htmlacademy.ru/courses" method="post">
@@ -114,24 +124,28 @@
         <img src="img/map.jpg" width="1200" height="594" alt="Карта">
       </section>
     </main>
+
+
     <footer class="footer">
-      <section class="communication">
-        <a href="#">#visitSEDONA</a>
-        <a href="tel:+74956660166">ТЕЛ: +7(495) 666-01-66</a>
-      </section>
-      <section class="social">
-        <ul>
-          <li><a class="blue" href="#">Твиттер</a></li>
-          <li><a class="blue" href="#">Фейсбук</a></li>
-          <li><a class="blue" href="#">Ютуб</a></li>
-        </ul>
-      </section>
-      <section class="logo-html">
-        <span>
-          Website by
-        </span>
-        <a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS, уровень 1</a>
-      </section>
+      <div class="container">
+        <section class="communication">
+          <a href="#">#visitSEDONA</a>
+          <a href="tel:+74956660166">ТЕЛ: +7(495) 666-01-66</a>
+        </section>
+        <section class="social">
+          <ul>
+            <li><a class="blue" href="#">Твиттер</a></li>
+            <li><a class="blue" href="#">Фейсбук</a></li>
+            <li><a class="blue" href="#">Ютуб</a></li>
+          </ul>
+        </section>
+        <section class="logo-html">
+          <span>
+            Website by
+          </span>
+          <a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS, уровень 1</a>
+        </section>
+      </div>
     </footer>
   </body>
 </html>
