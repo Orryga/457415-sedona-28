@@ -188,6 +188,9 @@ img {
   width: 1200px;
   min-height: 216px;
   margin: 0 auto;
+
+  outline: 5px solid rgba(3, 4, 255, 0.3);
+  outline-offset: -5px;
 }
 
 .interest h2 {
@@ -197,6 +200,9 @@ img {
 }
 
 .interest a {
+  width: 568px;
+  height: 86px;
+  padding-top: 30px;
   background-color: var(--light-brown);
    /*не получилось задать размер блоку*/
   color: var(--white);
@@ -252,30 +258,99 @@ img {
 
 .footer .container {
   width: 100%;
-  display: flex;
-  justify-content: space-between;
+  min-height: 120px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
 
+}
+
+.communication {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  outline: 5px solid rgba(255, 0, 0, 0.7);
+  outline-offset: -5px;
+}
+
+.social {
+  
+  outline: 5px solid rgba(0,255, 0, 0.7);
+  outline-offset: -5px;
+}
+
+.social ul {
+  
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+
+.social ul:nth-child(2) { /*не понимаю что делаю не так, почему не срабатывают отступы */
+  margin-right: 6px;
+  margin-left: 6px;
+}
+
+.logo-html {
+  outline: 5px solid rgba(0, 0, 255, 0.7);
+  outline-offset: -5px;
 }
 
 /*отели*/
-.types-of-housing {
- min
+.sorter {
+  width: 1200зч;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  outline: 5px solid rgba(3, 4, 255, 0.3);
+  outline-offset: -5px;
 }
 
 .hotels {
+  width: 1200px;
+  min-height: 454px;
   list-style: none;
+  display: flex;
+  justify-content: space-between;
 }
+
+.hotels li {
+  display: flex;
+}
+
+
 
 .hotels h3 {
   font-weight: bold;
   font-size: 21px;
   line-height: 26px;
+  
 }
 
-.hotels img {
-  padding-left: 113px;
-  padding-top: 390px;;
+.hotels-img {
+  width: 135px;
+  height: 90px;
+  
+
+  outline: 5px solid rgba(255, 0, 0, 0.7);
+  outline-offset: -5px;
 }
+
+.hotels-info {
+ 
+
+  outline: 5px solid rgba(0, 255, 0, 0.7);
+  outline-offset: -5px;
+}
+
+.hotels-rating {
+ 
+
+  outline: 5px solid rgba(0, 0, 255, 0.7);
+  outline-offset: -5px;
+}
+
+
 
 
 

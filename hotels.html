@@ -30,39 +30,40 @@
 
 
     <main class="container">
-      <h1 class="visually-hidden">Проживание</h1>
-      <form class="filter" action="https://echo.htmlacademy.ru/courses" method="post">
-        <fieldset class="infrastructure">
-          <legend>Инфраструктура</legend>
-          <label>
-            <input type="checkbox" name="pool" checked> Бассейн
-          </label>
-          <label>
-            <input type="checkbox" name="parking"> Парковка
-          </label>
-          <label>
-            <input type="checkbox" name="wi-fi"> Wi-Fi
-          </label>
-        </fieldset>
-        <fieldset class="housing">
-          <legend>Тип жилья</legend>
-          <label>
-            <input type="checkbox" name="hotel" checked> Гостиница
-          </label>
-          <label>
-            <input type="checkbox" name="motel" checked> Мотель
-          </label>
-          <label>
-            <input type="checkbox" name="apartments" checked> Апартаменты
-          </label>
-        </fieldset>
-        <fieldset>
-          <legend>Стоимость в сутки (Р):</legend>
-          <button type="button" name="min">От 0</button>
-          <button type="button" name="max">До 3000</button>
-          <button type="submit">Показать</button>
-        </fieldset>         
-      </form>
+      <div class="sorter">
+        <h1 class="visually-hidden">Проживание</h1>
+        <form class="filter" action="https://echo.htmlacademy.ru/courses" method="post">
+          <fieldset class="infrastructure">
+            <legend>Инфраструктура</legend>
+            <label>
+              <input type="checkbox" name="pool" checked> Бассейн
+            </label>
+            <label>
+              <input type="checkbox" name="parking"> Парковка
+            </label>
+            <label>
+              <input type="checkbox" name="wi-fi"> Wi-Fi
+            </label>
+          </fieldset>
+          <fieldset class="housing">
+            <legend>Тип жилья</legend>
+            <label>
+              <input type="checkbox" name="hotel" checked> Гостиница
+            </label>
+            <label>
+              <input type="checkbox" name="motel" checked> Мотель
+            </label>
+            <label>
+              <input type="checkbox" name="apartments" checked> Апартаменты
+            </label>
+          </fieldset>
+          <fieldset>
+            <legend>Стоимость в сутки (Р):</legend>
+            <button type="button" name="min">От 0</button>
+            <button type="button" name="max">До 3000</button>
+            <button type="submit">Показать</button>
+          </fieldset>         
+        </form>
       <div class="types-of-housing">
         <ul class="hotels">
           <li>
@@ -138,6 +139,7 @@
             </div>
           </li>
         </ul>
+      </div>
       </div>
     </main>
 
